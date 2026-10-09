@@ -1,0 +1,187 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #fff8f3;
+  --color-surface-dim: #e0d9d2;
+  --color-surface-bright: #fff8f3;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #faf2eb;
+  --color-surface-container: #f4ece5;
+  --color-surface-container-high: #efe7e0;
+  --color-surface-container-highest: #e9e1da;
+  --color-on-surface: #1e1b17;
+  --color-on-surface-variant: #404942;
+  --color-inverse-surface: #33302b;
+  --color-inverse-on-surface: #f7efe8;
+  --color-outline: #707a71;
+  --color-outline-variant: #bfc9bf;
+  --color-surface-tint: #1f6b45;
+  --color-primary: #005230;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1f6b45;
+  --color-on-primary-container: #9ee9b9;
+  --color-inverse-primary: #8cd6a8;
+  --color-secondary: #a33d13;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #fd7f51;
+  --color-on-secondary-container: #6b2000;
+  --color-tertiary: #4a463e;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #625e55;
+  --color-on-tertiary-container: #dfd8cd;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #a7f3c3;
+  --color-primary-fixed-dim: #8cd6a8;
+  --color-on-primary-fixed: #002110;
+  --color-on-primary-fixed-variant: #005230;
+  --color-secondary-fixed: #ffdbcf;
+  --color-secondary-fixed-dim: #ffb59b;
+  --color-on-secondary-fixed: #380d00;
+  --color-on-secondary-fixed-variant: #822800;
+  --color-tertiary-fixed: #e9e2d7;
+  --color-tertiary-fixed-dim: #ccc6bb;
+  --color-on-tertiary-fixed: #1e1b15;
+  --color-on-tertiary-fixed-variant: #4a463e;
+  --color-background: #fff8f3;
+  --color-on-background: #1e1b17;
+  --color-surface-variant: #e9e1da;
+
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-margin: 2.5rem;
+  --spacing-margin-mobile: 1.25rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-display-mobile: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg-mobile: "Plus Jakarta Sans", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", sans-serif;
+  --font-headline-sm: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", sans-serif;
+  --font-label-lg: "Plus Jakarta Sans", sans-serif;
+  --font-label-md: "Plus Jakarta Sans", sans-serif;
+  --font-label-sm: "Plus Jakarta Sans", sans-serif;
+  --font-data-metric: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer utilities {
+  .text-display {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.03em;
+    font-weight: 700;
+  }
+  .text-display-mobile {
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+  .text-headline-lg {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+  }
+  .text-headline-lg-mobile {
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+  .text-headline-md {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.015em;
+    font-weight: 600;
+  }
+  .text-headline-sm {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+  .text-body-lg {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.005em;
+    font-weight: 400;
+  }
+  .text-body-md {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0em;
+    font-weight: 400;
+  }
+  .text-body-sm {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0em;
+    font-weight: 400;
+  }
+  .text-label-lg {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+  }
+  .text-label-md {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+  }
+  .text-label-sm {
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+  }
+  .text-data-metric {
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f3;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  overscroll-behavior-y: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+

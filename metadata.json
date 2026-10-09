@@ -1,0 +1,6 @@
+{
+  "name": "SatuPeduli",
+  "description": "Platform galang dana dan donasi gotong royong yang transparan, hangat, dan terpercaya di Indonesia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
